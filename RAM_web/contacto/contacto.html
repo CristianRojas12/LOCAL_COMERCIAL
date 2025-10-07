@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — RAM</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="description" content="Contactate con RAM: dirección, teléfono, email y redes. Galerías Pacífico, CABA.">
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <a class="brand" href="../index/index.html">
+      <img src="../imagenes/Marca/LOGO_RAM_PNG.png" alt="RAM">
+      <span class="title">RAM</span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="../index/index.html">Inicio</a>
+      <a href="../productos/productos.html">Productos</a>
+      <a href="../nosotros/nosotros.html">Nosotros</a>
+      <a href="../contacto/contacto.html" class="btn btn-cta">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container contact">
+    <div class="col">
+      <h1>Ubicación y contacto</h1>
+      <p class="lead">Encontranos en <strong>Galerías Pacífico</strong> — Av. Córdoba 550, C1054 CABA, <strong>Local 7</strong>.</p>
+      <ul>
+        <li><strong>Teléfono:</strong> 11 3079-1685</li>
+        <li><strong>Email:</strong> consultas@RAM.com</li>
+        <li><strong>Instagram:</strong> @ram_argentina</li>
+        <li><strong>Facebook:</strong> @ram_argentina</li>
+        <li><strong>X (Twitter):</strong> @ram_argentina</li>
+      </ul>
+
+      <div class="form" aria-labelledby="form-title">
+        <h2 id="form-title">Escribinos</h2>
+
+        <!-- FORM DEMO - SIN FUNCIÓN -->
+        <div class="input">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu nombre">
+        </div>
+        <div class="input">
+          <label for="correo">Correo</label>
+          <input id="correo" type="email" placeholder="tu@correo.com">
+        </div>
+        <div class="input">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+        </div>
+        <button class="btn btn-primary" type="button">Enviar consulta</button>
+      </div>
+    </div>
+
+    <div class="col map">
+      <h2>Cómo llegar</h2>
+      <iframe title="Mapa RAM — Galerías Pacífico" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Galer%C3%ADas%20Pac%C3%ADfico%2C%20Av.%20C%C3%B3rdoba%20550%2C%20CABA&output=embed"></iframe>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container row">
+    <div>© <span id="y"></span> RAM — Galerías Pacífico, Av. Córdoba 550, Local 7, CABA</div>
+    <div style="display:flex; gap:12px">
+      <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">X</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
