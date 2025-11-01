@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAM — Promociones</title>
+  <meta name="description" content="Aprovecha nuestras ofertas y promociones en componentes de PC.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="promociones.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="../index/index.html">
+        <img src="../imagenes/Marca/LOGO_RAM_PNG.png" alt="RAM">
+        <span class="title">RAM</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="../index/index.html">Inicio</a>
+        <a href="../productos/productos.html">Productos</a>
+        <a href="promociones.html">Promociones</a>
+        <a href="../nosotros/nosotros.html">Nosotros</a>
+        <a href="../contacto/contacto.html" class="btn btn-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Promociones</h1>
+        <p class="lead">Aprovechá nuestras ofertas especiales y ahorrá en tu próxima compra.</p>
+
+        <div class="promociones-container">
+          <!-- Promoción 1: 50% en el segundo producto -->
+          <div class="promocion-card">
+            <h3>Llevá 2 y obtené 50% en el segundo</h3>
+            <p>Ingresá el precio de dos productos para calcular tu ahorro.</p>
+            <div class="form-group">
+              <label for="promo1-prod1">Precio Producto 1:</label>
+              <input type="number" id="promo1-prod1" placeholder="Ej: 15000">
+            </div>
+            <div class="form-group">
+              <label for="promo1-prod2">Precio Producto 2:</label>
+              <input type="number" id="promo1-prod2" placeholder="Ej: 12000">
+            </div>
+            <button onclick="calcularPromo1()">Calcular</button>
+            <div id="resultado-promo1" class="resultado"></div>
+          </div>
+
+          <!-- Promoción 2: 3x2 en productos seleccionados -->
+          <div class="promocion-card">
+            <h3>3x2 en productos seleccionados</h3>
+            <p>Ingresá el precio de tres productos. El de menor valor es gratis.</p>
+            <div class="form-group">
+              <label for="promo2-prod1">Precio Producto 1:</label>
+              <input type="number" id="promo2-prod1" placeholder="Ej: 8000">
+            </div>
+            <div class="form-group">
+              <label for="promo2-prod2">Precio Producto 2:</label>
+              <input type="number" id="promo2-prod2" placeholder="Ej: 8000">
+            </div>
+            <div class="form-group">
+              <label for="promo2-prod3">Precio Producto 3:</label>
+              <input type="number" id="promo2-prod3" placeholder="Ej: 8000">
+            </div>
+            <button onclick="calcularPromo2()">Calcular</button>
+            <div id="resultado-promo2" class="resultado"></div>
+          </div>
+
+          <!-- Promoción 3: 10% de descuento por compras superiores a $30.000 -->
+          <div class="promocion-card">
+            <h3>10% de descuento por compras superiores a $30.000</h3>
+            <p>Ingresá el total de tu compra para ver el descuento.</p>
+            <div class="form-group">
+              <label for="promo3-total">Total de la compra:</label>
+              <input type="number" id="promo3-total" placeholder="Ej: 35000">
+            </div>
+            <button onclick="calcularPromo3()">Calcular</button>
+            <div id="resultado-promo3" class="resultado"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div><strong>RAM</strong> · Galerías Pacífico — Av. Córdoba 550, Local 7, CABA · Tel: 11 3079-1685 · consultas@RAM.com</div>
+      <div style="display:flex; gap:12px"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">X</a></div>
+    </div>
+  </footer>
+
+  <script src="promociones.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.promociones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.promocion-card {
+    background-color: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.promocion-card h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    background-color: var(--c-bg);
+    color: var(--c-text);
+}
+
+.promocion-card button {
+    margin-top: auto;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--c-primary);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resultado {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--c-bg);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+}
