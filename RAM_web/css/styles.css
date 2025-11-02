@@ -107,6 +107,7 @@ img{max-width:100%; display:block}
 .grid{display:flex; flex-wrap:wrap; gap:18px}
 .split{display:flex; flex-wrap:wrap; gap:28px; align-items:center}
 .split .col{flex:1 1 400px}
+.figure{display:flex; justify-content:center}
 .card{background:var(--c-surface); border:1px solid var(--c-border); border-radius:var(--radius); overflow:hidden; flex:1 1 260px; max-width:calc(33.333% - 12px); box-shadow:var(--shadow)}
 .card img{aspect-ratio:16/9; object-fit:cover}
 .card .body{padding:14px}
